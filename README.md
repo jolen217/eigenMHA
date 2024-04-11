@@ -130,7 +130,7 @@ $$
 $$
 
 $$
-\mathbf{{O}_{out}}=\mathbf{O}*\mathbf{{W}_{O}}+\mathbf{{b}_{O}}
+\mathbf{O_{out}}=\mathbf{O}\times\mathbf{W_{O}}+\mathbf{b_{O}}
 $$
 
 $$
