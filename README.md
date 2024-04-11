@@ -140,7 +140,7 @@ $$
 
 MSELoss will also gives 
 
-$$ \mathbf{grad({O_{out}}) $$
+$$ \mathbf{grad({O_{out}})} $$
 
 , the gradient of  
 
