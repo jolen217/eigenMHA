@@ -135,12 +135,12 @@ $$
 
 ### MSE Loss
 $$
-loss = MSELoss(\mathbf{O}_{out},\mathbf{O}_{target})
+loss = MSELoss(\mathbf{O_{out}},\mathbf{O_{target}})
 $$
 
 MSELoss will also gives 
 
-$$ \mathbf{grad\\_O}_{out} $$
+$$ \mathbf{grad({O_{out}}) $$
 
 , the gradient of  
 
