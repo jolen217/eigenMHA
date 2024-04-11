@@ -73,7 +73,7 @@ $$
 \mathbf{Q_{in}} \quad  \mathbf{K_{in}} \quad  \mathbf{V_{in}}
 $$
 
-2. Weights and bias for the linear layer of Q K V and O.
+2. Weights and bias for the linear layer of Q, K, V, and O.
 
 $$
 \mathbf{W_{Q}} \quad \mathbf{b_{Q}}
@@ -95,30 +95,30 @@ $$
 4. Output and target
 
 $$
-\mathbf{O}_{out}\quad\mathbf{O}_{target}
+\mathbf{O_{out}}\quad\mathbf{O_{target}}
 $$
 
 
 The equations of MHA forward pass are as follows,
 
 $$
-\mathbf{Q} = \mathbf{Q}_{in}*\mathbf{W}_{Q}+\mathbf{b}_{Q}
+\mathbf{Q} = \mathbf{Q_{in}} \times \mathbf{W_{Q}}+\mathbf{b_{Q}}
 $$
 
 $$
-\mathbf{K} = \mathbf{K}_{in}*\mathbf{W}_{K}+\mathbf{b}_{K}
+\mathbf{K} = \mathbf{K_{in}} \times \mathbf{W_{K}}+\mathbf{b_{K}}
 $$
 
 $$
-\mathbf{V} = \mathbf{V}_{in}*\mathbf{W}_{V}+\mathbf{b}_{V}
+\mathbf{V} = \mathbf{V_{in}} \times \mathbf{W_{V}}+\mathbf{b_{V}}
 $$
 
 $$
-\mathbf{S} = \mathbf{Q}*\mathbf{K}^T
+\mathbf{S} = \mathbf{Q} \times \mathbf{K}^T
 $$
 
 $$
-\mathbf{P} = SoftmaxFWD(Mask(\mathbf{S}*\frac{1}{\sqrt{d}}))
+\mathbf{P} = SoftmaxFWD(Mask(\mathbf{S} \times \frac{1}{\sqrt{d}}))
 $$
 
 $$
@@ -131,10 +131,6 @@ $$
 
 $$
 \mathbf{O_{out}}=\mathbf{O}\times\mathbf{W_{O}}+\mathbf{b_{O}}
-$$
-
-$$
-\mathbf{{O}_{out}}
 $$
 
 ### MSE Loss
