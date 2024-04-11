@@ -70,25 +70,25 @@ For more details of the Attention APIs in cuDNN v8, see this [中文CSDN链接](
 1. Q, K, V input embeddings
 
 $$
-\mathbf{Q}_{in} \quad  \mathbf{K}_{in} \quad  \mathbf{V}_{in}
+\mathbf{Q_{in}} \quad  \mathbf{K_{in}} \quad  \mathbf{V_{in}}
 $$
 
 2. Weights and bias for the linear layer of Q K V and O.
 
 $$
-\mathbf{W}_{Q} \quad \mathbf{b}_{Q}
+\mathbf{W_{Q}} \quad \mathbf{b_{Q}}
 $$
 
 $$
-\mathbf{W}_{K} \quad \mathbf{b}_{K}
+\mathbf{W_{K}} \quad \mathbf{b_{K}}
 $$
 
 $$
-\mathbf{W}_{V} \quad \mathbf{b}_{V}
+\mathbf{W_{V}} \quad \mathbf{b_{V}}
 $$
 
 $$
-\mathbf{W}_{O} \quad \mathbf{b}_{O}
+\mathbf{W_{O}} \quad \mathbf{b_{O}}
 $$
 
 3. Intermediate variables
