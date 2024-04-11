@@ -138,7 +138,7 @@ $$
 loss = MSELoss(\mathbf{O_{out}},\mathbf{O_{target}})
 $$
 
-MSELoss will also gives the gradient of $$ \mathbf{O_{out}} $$
+MSELoss will also gives the gradient of $ \mathbf{O_{out}} $
 
 $$ \mathbf{grad({O_{out}})} $$
 
