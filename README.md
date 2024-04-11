@@ -138,13 +138,10 @@ $$
 loss = MSELoss(\mathbf{O_{out}},\mathbf{O_{target}})
 $$
 
-MSELoss will also gives 
+MSELoss will also gives the gradient of $$ \mathbf{O}_{out} $$
 
 $$ \mathbf{grad({O_{out}})} $$
 
-, the gradient of  
-
-$$ \mathbf{O}_{out} $$
 
 ### Backward Pass of MHA
 
