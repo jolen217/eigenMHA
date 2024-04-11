@@ -134,7 +134,7 @@ $$
 $$
 
 $$
-\mathbf{O}
+\mathbf{{O}_{out}}
 $$
 
 ### MSE Loss
