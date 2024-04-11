@@ -133,6 +133,8 @@ $$
 \mathbf{O}_{out} = \mathbf{O}*\mathbf{W}_{O}+\mathbf{b}_{O}
 $$
 
+$\mathbf{O}_{out} = \mathbf{O}*\mathbf{W}_{O}+\mathbf{b}_{O}$
+
 ### MSE Loss
 $$
 loss = MSELoss(\mathbf{O}_{out},\mathbf{O}_{target})
