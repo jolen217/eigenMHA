@@ -148,32 +148,32 @@ $$ \mathbf{grad({O_{out}})} $$
 1. Gradients for output (from LayerNorm)
 
 $$
-\mathbf{grad\\_O}_{out}
+\mathbf{grad({O_{out}})}
 $$
 
 2. Gradients for the intermediate variables
 3. Gradients for the forward input
 
 $$ 
-\mathbf{grad\\_Q}_{in} \quad \mathbf{grad\\_K}_{in} \quad \mathbf{grad\\_V}_{in}
+\mathbf{grad({Q_{in}})} \quad \mathbf{grad({K_{in}})} \quad \mathbf{grad({V_{in}})}
 $$
 
 4. Gradients of the weights and biases
 
 $$
-\mathbf{grad\\_W}_{Q} \quad \mathbf{grad\\_b}_{Q}
+\mathbf{grad({W_{Q}})} \quad \mathbf{grad({b_{Q}})}
 $$
 
 $$
-\mathbf{grad\\_W}_{K} \quad \mathbf{grad\\_b}_{K}
+\mathbf{grad({W_{K}})} \quad \mathbf{grad({b_{K}})}
 $$
 
 $$
-\mathbf{grad\\_W}_{V} \quad \mathbf{grad\\_b}_{V}
+\mathbf{grad({W_{V}})} \quad \mathbf{grad({b_{V}})}
 $$
 
 $$
-\mathbf{grad\\_W}_{O} \quad \mathbf{grad\\_b}_{O}
+\mathbf{grad({W_{O}})} \quad \mathbf{grad({b_{O}})}
 $$
 
 The equations of MHA backward pass are as follows,
